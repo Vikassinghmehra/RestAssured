@@ -23,3 +23,4 @@ public enum URLMapper {
         return String.format(baseURL + urlEnum.url ,params);
     }
 }
+

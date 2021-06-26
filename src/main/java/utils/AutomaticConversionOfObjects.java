@@ -1,10 +1,13 @@
 package utils;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import io.restassured.mapper.ObjectMapper;
 
+import java.io.IOException;
 import java.lang.reflect.Type;
+import java.util.Map;
 
 /**
  * @author Vikas Mehra
@@ -32,4 +35,15 @@ public class AutomaticConversionOfObjects {
         }
         return obj;
     }
+
+    public static Map<String, Object> convertObjToMap(Object requestSpecification) {
+        try {
+            return new ObjectMapper().readValue(new Gson().toJson(requestSpecification), new TypeReference<Map<String, Object>>(){});
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
 }
