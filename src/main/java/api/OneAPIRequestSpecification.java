@@ -122,7 +122,7 @@ public class OneAPIRequestSpecification {
 
     @Override
     public String toString() {
-        return AutomaticConversionOfObjects.convertDTOToJson(this);
+        return AutomaticConversionOfObjects.convertObjectToJson(this);
     }
 
 }

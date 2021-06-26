@@ -14,7 +14,7 @@ import java.util.Map;
  * @date 26/06/21 11:41 AM
  */
 public class AutomaticConversionOfObjects {
-    public static String convertDTOToJson(Object object){
+    public static String convertObjectToJson(Object object){
         try{
             return new GsonBuilder().disableHtmlEscaping().create().toJson(object);
         }catch(Exception e){
