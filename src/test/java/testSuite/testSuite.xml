@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Test Suite" verbose="1" >
+    <parameter name="environment" value="TestEnvironment"/>
+    <test name="Automation Test" parallel = "classes" thread-count = "2">
+        <classes>
+            <class name="apiTest.BookAPITest"/>
+            <class name="apiTest.MovieAPITest"/>
+        </classes>
+    </test>
+
+</suite>

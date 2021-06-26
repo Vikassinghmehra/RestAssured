@@ -37,7 +37,7 @@ public class BaseHelper {
     private void configureExtentReport(){
         sparkReporter.config().setDocumentTitle(" Automation Report ");
         extentReporter.attachReporter(sparkReporter);
-        extentReporter.setSystemInfo("Tester","Vikas Mehra");
+        extentReporter.setSystemInfo("MacOS High Sierra","10.13.6");
     }
 
     public void reportLog(String message){

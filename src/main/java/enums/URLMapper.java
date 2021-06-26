@@ -11,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 public enum URLMapper {
 
     BOOK("v2/book"),
+    MOVIE("v2/movie"),
     QUOTE("v2/movie/%id/quote");
 
     private String url;
