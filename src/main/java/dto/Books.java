@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.List;
+import java.util.Map;
 
 /**
  * @author Vikas Mehra
@@ -18,12 +18,21 @@ import java.util.List;
 @NoArgsConstructor
 @Slf4j
 public class Books {
-    public List<Doc> docs;
+
+    public Doc getDocs(int i) {
+        return (Doc) docs[i];
+    }
+
+
+
+    public Map<String,String> docs[];
     public int total;
     public int limit;
     public int offset;
     public int page;
     public int pages;
+
+
 }
 
 

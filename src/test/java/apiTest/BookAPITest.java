@@ -3,6 +3,7 @@ package apiTest;
 import action.BookApiAction;
 import base.BaseTest;
 import dto.Books;
+import dto.Doc;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.testng.Assert;

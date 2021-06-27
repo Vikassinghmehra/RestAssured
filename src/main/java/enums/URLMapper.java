@@ -12,7 +12,7 @@ public enum URLMapper {
 
     BOOK("v2/book"),
     MOVIE("v2/movie"),
-    QUOTE("v2/movie/%id/quote");
+    QUOTE("v2/movie/%s/quote");
 
     private String url;
     URLMapper(String url){

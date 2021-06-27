@@ -88,7 +88,6 @@ public class MovieAPITest extends BaseTest {
 
     }
 
-
     @Test(priority = 9)
     public void happyCaseForMovieAPIWithValidToken(){
         String res=MovieApiAction.withValidToken();
